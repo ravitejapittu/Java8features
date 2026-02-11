@@ -1,5 +1,7 @@
 package com.ravi.functionalinterfaces;
 
+import java.util.List;
+
 public class Main {
 
     /*@Override
@@ -36,6 +38,15 @@ public class Main {
         };
 
        tenNumbers.printTenNumbers();
+
+       FunctionalInterfaceExample2 example2 = name -> name;
+        System.out.println(example2.getName("Ravi Teja"));
+
+       List<String> names = List.of("Ravi", "Sai", "Santhosh", "Pavan", "Suresh");
+
+       names.forEach(name -> {
+           System.out.println(name);
+       });
 
         //(param1, param2 ....) -> { body };
     }
